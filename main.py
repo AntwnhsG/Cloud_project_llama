@@ -1,7 +1,9 @@
 import subprocess
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 def run_llama_command(prompt_text):
 
